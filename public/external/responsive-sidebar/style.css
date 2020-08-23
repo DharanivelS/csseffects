@@ -1,0 +1,124 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    min-height: 100vh;
+    background: #FBFBFB;
+}
+.navigation{
+    position: fixed;
+    top: 0;
+    width: 60px;
+    height: 100%;
+    background-color: #fff;
+    transition: 0.5s;
+    overflow: hidden;
+}
+.navigation.active{
+    width: 200px;
+}
+.navigation ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+.navigation ul li{
+    position: relative;
+    width: 100%;
+    list-style-type: none;
+}
+.navigation ul li:hover{
+    background-color: #FBFBFB;
+}
+.navigation ul li a{
+    position: relative;
+    display: block;
+    width: 100%;
+    display: flex;
+    text-decoration: none;
+    color: #000;
+}
+.navigation ul li a .icon{
+    position: relative;
+    display: block;
+    min-width: 60px;
+    height: 60px;
+    line-height: 60px;
+    text-align: center;
+}
+.navigation ul li a .icon .fa{
+    font-size: 24px;
+}
+.navigation ul li a .title{
+    position: relative;
+    display: block;
+    padding: 0 10px;
+    height: 60px;
+    line-height: 60px;
+    white-space: nowrap;
+}
+.toggle{
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background-color: #fff;
+    cursor: pointer;
+}
+.toggle.active{
+    background-color: #FBFBFB;
+}
+.toggle:before{
+    content: '\f0c9';
+    font-family: fontAwesome;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 60px;
+    text-align: center;
+    font-size: 24px;
+    color: #000;
+}
+.toggle.active:before{
+    content: '\f00d';
+}
+.para{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 80px;
+    margin-right: 80px;
+    z-index: -1;
+    transition: 0.5s;
+}
+.para.active{
+    margin-top: 40px;
+    margin-left: 220px;
+    margin-right: 80px;
+}
+h1{
+    font-weight: 500;
+}
+.text{
+    margin: 15px 0;
+    line-height: 1.5;
+}
+
+@media (max-width:767px)
+{
+    .navigation{
+        left: -60px;
+    }
+    .navigation.active{
+        left: 0;
+        width: 100%;
+    }
+    .para,.para.active{
+        margin: 40px 20px;
+        z-index: -1;
+    }
+}

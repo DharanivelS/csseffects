@@ -13,7 +13,7 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #42BDFF;
+    background-color: #545454;
     z-index: 1000;
     
 }
@@ -32,12 +32,24 @@ header .logo{
    
     margin-bottom: 100px;
     margin-left: 60px;
+    margin-right: 60px;
+    background: #E2E7EA;
 }
 table{
-    line-height: 2.5;
+    border-collapse: collapse;
 }
-
-
+table,th,td{
+    border-bottom: 1px solid gray;
+}
+td,th{
+    padding: 15px 50px;
+}
+th{
+    font-size: 24px;
+}
+td{
+    font-size: 18px;
+}
 @media (max-width:992px)
 {
     header ul{

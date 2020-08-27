@@ -23,7 +23,7 @@ app.get('/download/box-hover',function(rq,rs){
 app.get('/download/custom-checkbox',function(rq,rs){
     rs.download('../public/external/downloadfiles/custom-checkbox.rar')
 })
-app.get('download/email-validation-check',function(rq,rs){
+app.get('/download/email-validation-check',function(rq,rs){
     rs.download('../public/external/downloadfiles/email-validation-check.rar')
 })
 app.get('/download/fullscreen-video-background',function(rq,rs){
